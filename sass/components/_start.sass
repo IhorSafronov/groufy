@@ -1,0 +1,49 @@
+.page
+  &__start
+    margin-bottom: 100px
+    @include respond (tab-land)
+      margin-bottom: 50px
+.start
+  padding-top: 100px
+  padding-bottom: 100px
+  @include respond (tab-land)
+    padding-top: 50px
+    padding-bottom: 50px
+  @include respond (tab-port)
+    padding-top: 30px
+    padding-bottom: 30px
+  &__container
+  &__body
+    display: flex
+    align-items: center
+    background: rgba(129, 129, 139, 0.1)
+    border-radius: 30px
+    padding: 52px 40px
+    @include respond(tab-port)
+      flex-direction: column
+      row-gap: 30px
+      padding: 26px 20px
+    @include respond (phone)
+      padding: 13px 10px
+      align-items: stretch
+  &__column
+    flex: 0 1 50%
+    text-align: center
+  &__title
+    font-weight: 400
+    font-size: 32px
+    line-height: 1.4 // 45/32
+    color: $color-white
+    @include respond (phone)
+      font-size: 22px
+  &__text
+    display: inline-block
+    max-width: 320px
+  &__actions
+    display: flex
+    justify-content: center
+    column-gap: 32px
+    row-gap: 15px
+    @include respond (phone)
+      flex-direction: column
+  &__button

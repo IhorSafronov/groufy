@@ -1,0 +1,100 @@
+.page
+  &__blog
+
+.blog
+  padding-top: 100px
+  padding-bottom: 100px
+  @include respond (tab-land)
+    padding-top: 50px
+    padding-bottom: 50px
+  @include respond (tab-port)
+    padding-top: 30px
+    padding-bottom: 30px
+  &__container
+  &__content
+    margin-bottom: 64px
+    @include respond (tab-land)
+      margin-bottom: 40px
+    @include respond (tab-land)
+      margin-bottom: 20px
+  &__label
+  &__title
+  &__body
+    display: flex
+    justify-content: space-between
+    gap: 40px
+    @include respond (tab-port)
+      flex-direction: column
+  &__text
+  &__actions
+    align-self: flex-end
+    flex: 0 0 auto
+    display: flex
+    @include respond (phone)
+      display: contents
+  &__button
+  &__items
+    display: grid
+    gap: 48px
+    grid-template-columns: repeat(3, 1fr)
+    @include respond (desctop)
+      gap: 28px
+    @include respond (tab-land)
+      grid-template-columns: auto
+    gap: 32px
+  &__item
+
+.item-blog
+  background: rgba(129, 129, 139, 0.1)
+  border-radius: 24px
+  overflow: hidden
+  display: flex
+  flex-direction: column
+  min-height: 100%
+  &__head
+    position: relative
+  &__category
+    position: absolute
+    bottom: 0
+    left: 0
+    background: rgba(129, 129, 139, 0.5)
+    border-radius: 0px 10px 0px 0px
+    font-size: 14px
+    line-height: 1.57 // 22/14
+    color: $color-white
+    padding: 10px
+  &__image
+    display: block
+    position: relative
+    padding-bottom: 49.238579% // 194/394
+    img
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__body
+    padding: 26px
+  &__date
+    font-size: 16px
+    line-height: 1.5 // 24/16
+    color: rgba(129, 129, 139, 0.9)
+    &:not(:last-child)
+      margin-bottom: 20px
+  &__name
+    &:not(:last-child)
+      margin-bottom: 30px
+    &:hover
+      text-decoration: underline
+    &-link
+      color: $color-white
+  &__text
+    &:not(:last-child)
+      margin-bottom: 20px
+  &__link
+    font-size: 14px
+    line-height: 1.57 // 22/14
+    color: #3D96F4
+    &:hover
+      text-decoration: underline

@@ -1,0 +1,33 @@
+.page
+  &__clients
+
+.clients
+  padding-top: 160px
+  padding-bottom: 70px
+  @include respond (tab-land)
+    padding-top: 50px
+    padding-bottom: 50px
+  @include respond (tab-port)
+    padding-top: 30px
+    padding-bottom: 30px
+  &__container
+  &__title
+    text-align: center
+    font-size: 14px
+    line-height: 1.57 // 22/14
+    text-transform: uppercase
+    letter-spacing: 1px
+    color: $color-white
+    margin-bottom: 44px
+    @include respond (tab-land)
+      margin-bottom: 30px
+    @include respond (tab-port)
+      margin-bottom: 20px
+  &__items
+    display: flex
+    gap: 15px
+    flex-wrap: wrap
+    justify-content: space-around
+  &__item
+    img
+      max-width: 100%

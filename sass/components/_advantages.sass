@@ -1,0 +1,45 @@
+.page
+  &__advantages
+
+.advantages
+  padding-top: 100px
+  padding-bottom: 100px
+  @include respond (tab-land)
+    padding-top: 50px
+    padding-bottom: 50px
+  @include respond (tab-port)
+    padding-top: 30px
+    padding-bottom: 30px
+  &__container
+    display: flex
+    row-gap: 32px
+    @include respond (tab-land)
+      flex-direction: column
+  &__items
+    flex: 1 1 auto
+    padding-right: 32px
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: repeat(2, 1fr)
+    gap: 32px
+    @include respond(tab-land)
+      padding-right: 0
+    @include respond(phone)
+      grid-template-columns: auto
+  &__item
+    background: rgba(129, 129, 139, 0.1)
+    border-radius: 30px
+    padding: 40px
+  &__value
+    &:not(:last-child)
+      margin-bottom: 32px
+  &__text
+  &__images
+    flex: 0 0 38%
+    border-radius: 0px 378px 378px 378px
+    overflow: hidden
+    align-self: flex-end
+    @include respond (tab-land)
+      align-self: center
+    img
+      max-width: 100%
